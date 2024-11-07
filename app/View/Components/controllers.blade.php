@@ -22,7 +22,7 @@ class BibliotecaController extends Controller
             'editorial' => 'required|string',
             'email' => 'required|email',
         ]);
-        // Aquí se puede agregar la lógica para guardar el libro en la base de datos
+        // 
         return redirect()->route('principal')->with('success', 'Libro guardado correctamente');
     }
 }
